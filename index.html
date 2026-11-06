@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Tin</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+  <a class="skip" href="#main">Skip to content</a>
+
+  <header class="site-header">
+    <div class="brand">
+      <h1>Cute Cat Pictures</h1>
+      <p class="tagline">The coolest cats on the web</p>
+    </div>
+
+    <nav aria-label="Main menu">
+      <ul>
+        <li><a href="#gallery">Gallery</a></li>
+        <li><a href="#breeds">Breeds</a></li>
+        <li><a href="#newsletter">Newsletter</a></li>
+      </ul>
+    </nav>
+
+    <button id="themeBtn" type="button" aria-pressed="false">Light theme</button>
+  </header>
+
+  <main id="main">
+    <section id="gallery" aria-labelledby="gallery-title">
+      <h2 id="gallery-title">Meet the cats</h2>
+      <p>Three cute cats, three very different looks.</p>
+
+      <div class="cards">
+        <figure class="card">
+          <img src="Persian_cat.avif" alt="A fluffy Persian cat">
+          <figcaption>
+            <h3>Persian</h3>
+            <p>Long, fluffy coat and a calm personality.</p>
+          </figcaption>
+        </figure>
+
+        <figure class="card">
+          <img class="top" src="scottish-fold-munchkin-kitten-almontecats.com_.webp" alt="A gray Scottish Fold kitten with blue eyes">
+          <figcaption>
+            <h3>Scottish Fold</h3>
+            <p>Known for small folded ears and a round face.</p>
+          </figcaption>
+        </figure>
+
+        <figure class="card">
+          <img src="Siamese_cat_1110x740.jpg" alt="A Siamese cat with blue eyes sitting on a couch">
+          <figcaption>
+            <h3>Siamese</h3>
+            <p>Bright blue eyes and a dark face and ears.</p>
+          </figcaption>
+        </figure>
+      </div>
+    </section>
+
+    <section id="breeds" aria-labelledby="breeds-title">
+      <h2 id="breeds-title">Quick list</h2>
+      <ul class="list">
+        <li>Persian</li>
+        <li>Scottish Fold</li>
+        <li>Siamese</li>
+      </ul>
+    </section>
+
+    <section id="newsletter" aria-labelledby="news-title">
+      <h2 id="news-title">Get free cat pics</h2>
+      <form id="newsForm" novalidate>
+        <label for="email">Email address</label>
+        <div class="row">
+          <input id="email" name="email" type="email" autocomplete="email" placeholder="you@example.com" required>
+          <button type="submit">Subscribe</button>
+        </div>
+        <p id="status" role="status" aria-live="polite"></p>
+      </form>
+    </section>
+  </main>
+
+  <footer>
+    <p>Made for my class video. <a href="https://www.geeksforgeeks.org/html/html-introduction/">Read about HTML</a></p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
